@@ -1,77 +1,39 @@
-# Servicios REST/Express
+# Juego Adivinando.
 
-Ejemplo de consumo de servicios REST, utilizando [Express] para tal fin, cada servicio hace uso de su [método] correspondiente.
+Juego realizado con caracter académico, inspirado en el juego [Apensar].
 
-### Urls de consumo:
+![Adivinando](https://dl.dropboxusercontent.com/u/181689/imgGame/videoAdivinando.gif)
 
-* ```/getAllData``` : **GET**  LLevar todos los usaurios.
-* ```/createData``` : **POST** Crear un nuevo usuario 
-* ```/updateData ``` : **PUT**  Actualizar un usuario
-* ```/getData/id``` : **GET** Llevar datos de un usuario
-* ```/deleteData/id``` : **DELETE** Eliminar un usuario.
+### Demo
 
-Para el ejemplo se ha hecho uso de un Array que muestra la estructura de la base de datos NoSQL a manejar.
+Es posible acceder al juego a través de la dirección: http://jorger.github.io/juego_adivinando/
 
-```javascript
-var objeto = [
-				{
-					id 			: 	1, 
-					identifi	: 	"12345",
-					nombre 		: 	"Jorge", 
-					apellido	: 	"Rubiano", 
-					email		: 	"correo@correo.com", 
-					fecha		: 	"1985-06-15"
-				},
-				{
-					id 			: 	2, 
-					identifi	: 	"453453",
-					nombre 		: 	"María", 
-					apellido	: 	"Pérez", 
-					email		: 	"maria@correo.com",
-					fecha		: 	"1970-04-25"
-				},
-				{
-					id 			: 	3, 
-					identifi	: 	"893434",
-					nombre 		: 	"Pedro", 
-					apellido	: 	"García", 
-					email		: 	"pedro@correo.com", 
-					fecha		: 	"1990-08-23"
-				}];
-```
+Para dispositivos móviles es posible escanear el siguiente código QR.
 
+![QR](https://dl.dropboxusercontent.com/u/181689/imgGame/qrAdivinando.png)
 
-### Ejemplo consumo de servicios.
+### Objetivo
 
-Para realizar el consumo de los servicios se recomienda utilizar [Postman], dependiendo del servicio se debrá selccionar su método correspondiente: 
-**```POST, GET, PUT, DELETE```**
+El objetivo del juego es adivinar una palabra en relación a las palabras mostradas, también se le entrega al usuario una pista que le ayudará a encontrar la palabra correcta.
 
-![Postman](https://dl.dropboxusercontent.com/u/181689/postmanCreate.png)
+### Tecnologías.
 
-**Nota.**
+Para el presente juego se ha utilizad:
 
-Para el caso de los servicios de crear (POST ) y editar (PUT), se deberá establecer el tipo de cabecera (Header) que tendrá la petición, en este caso Json: 
-```Content-Type``` ```application/json``` como se muestra en la imagen.
+* [API de Flickr]: Para el manejo de las imágenes, dado un tag el servicio devuelve una colección de imágenes (JSON).
+* [owlcarousel]: Librería para el manejo de la transición de las imágenes entregadas por la API de Flickr.
+* [sweetalert]: Lirería que pemite reemplazar el manejo de los mensajes nativos del navegador ```alert()``` ```confirm()```
+* [SoundJS]: Para el manejo de los sonidos.
 
-### Instalación ejemplos modulos.
+También se ha utilizado ```localStorage```para el almacenamiento del número de la palabra que se encuentra el usuario.
 
-Para la instación se deberá ejecutar el comando:
+Para que el juego funcione como una "aplicación nativa" (webApp) es necesario "instalarla" en este caso a través de la opción "Add Home Screen" que ofrece el navegador (Chrome), además para controlar la orientación del dispositivo y otras opciones una vez "instalado" se hace uso del archivo [manifest.json
 
-```
-npm install
-```
+### Futuras Mejoras.
 
-El cual leerá el archivo **package.json** descargando las dependencias necesarias.
+En este momento el juego se alimenta de un archivo .json para la relación de palabras a adivinar, en una próxima versión se esperar adicionar una base de datos (Mysql ó Mongo) la cual guarde dicha información.
 
-### Uso de Clod9 para despliegue de la aplicación.
-
-[Cloud9] permite el desarrollo y despliegue de aplicaciones, en este caso para [Node.js], la aplicación ya se encuentra en funcionamiento en dicho sistema, las urls de consumo de los servicios son:
-
-* ```/getAllData``` : https://rest-jorger-1.c9.io/getAllData
-* ```/createData``` : https://rest-jorger-1.c9.io/createData/
-* ```/updateData ``` : https://rest-jorger-1.c9.io/updateData/
-* ```/getData/id``` : https://rest-jorger-1.c9.io/deleteData/1
-* ```/deleteData/id``` : https://rest-jorger-1.c9.io/getData/2
+Además del almacenamiento del nivel de usuario no por localStorage sino a través de una base de datos, ranking por usuarios y comunicación con medios sociales (Facebook/Twitter/G+)
 
 ### Autor
 Jorge Rubaino [@ostjh]
@@ -79,8 +41,9 @@ License
 ----
 MIT
 [@ostjh]:https://twitter.com/ostjh
-[método]:http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods
-[Postman]:https://chrome.google.com/webstore/detail/postman-rest-client-packa/fhbjgbiflinjbdggehcddcbncdddomop
-[Cloud9]:https://c9.io/
-[Node.js]:https://nodejs.org/
-[Express]:http://expressjs.com/
+[Apensar]:https://play.google.com/store/apps/details?id=com.icogroup.apensar&hl=es_419
+[API de Flickr]:https://www.flickr.com/services/api/
+[owlcarousel]:http://owlgraphic.com/owlcarousel/
+[sweetalert]:http://t4t5.github.io/sweetalert/
+[SoundJS]:http://www.createjs.com/soundjs
+[manifest.json]:https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android
