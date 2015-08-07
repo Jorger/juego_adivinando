@@ -1,0 +1,14 @@
+{
+  "short_name": "Adivinando",
+  "name": "Jorge Rubiano",  
+  "icons": [
+  				{
+  					"src": "img/icono.gif",
+  					"sizes": "96x96",
+  					"type": "image/gif"
+  				}
+  		   ],
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

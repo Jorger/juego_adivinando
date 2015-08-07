@@ -1,0 +1,118 @@
+*
+{
+	margin:0;
+	padding:0
+}
+
+body
+{
+	font-family: 'Montserrat', sans-serif;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+header
+{
+	width:100%;
+	height:2.0em;
+	background-color:#EA4F38;
+	box-shadow:1px 1px 10px #4C4747;
+	color:#fff;
+	font-size:1.5em;
+}
+
+
+#owl-demo .item
+{
+	margin: 3px;
+}
+
+.imgCarrusel
+{
+	width: 200px;
+	height: 200px;
+	margin-left: 23%;
+} 
+#demo
+{  	
+	margin-top: 20px;
+}
+
+.divLetra
+{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 1.8em;
+	margin-right: 5px;
+	cursor: pointer;
+	-webkit-tap-highlight-color:transparent;
+}
+
+.baseLetra
+{
+	border-bottom: 4px solid rgb(137, 137, 137)
+}
+
+.campoLetras
+{
+	width: 90%;
+	text-align: center;
+	margin: auto;
+}
+
+.noSelecciona
+{
+	color: #3878EA;
+}
+
+.selecciona
+{
+	color: #CFCDCD;
+}
+
+.palabraMal
+{
+	color: red;
+}
+
+hr
+{
+	border: 1px solid rgb(248, 248, 248);
+	margin: 15px;
+}
+
+a
+{
+	color: #EA4F38;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+#titulo
+{
+	margin: 10px;
+	float: left;
+	padding-left: 10px;
+	width: 60%;
+}
+
+#btnayuda
+{
+	margin: 4px;
+	float: right;
+	width: 20%;
+	text-align: right;
+	padding-right: 5px;
+}
+
+#ayuda
+{
+	cursor: pointer;
+	-webkit-tap-highlight-color:transparent;
+}
