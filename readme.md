@@ -14,11 +14,11 @@ Para dispositivos móviles es posible escanear el siguiente código QR.
 
 ### Objetivo
 
-El objetivo del juego es adivinar una palabra en relación a las palabras mostradas, también se le entrega al usuario una pista que le ayudará a encontrar la palabra correcta.
+El objetivo del juego es adivinar una palabra en relación a las imágenes mostradas, también se le entrega al usuario una pista que le ayudará a encontrar la palabra correcta.
 
 ### Tecnologías.
 
-Para el presente juego se ha utilizad:
+Para el presente juego se ha utilizado:
 
 * [API de Flickr]: Para el manejo de las imágenes, dado un tag el servicio devuelve una colección de imágenes (JSON).
 * [owlcarousel]: Librería para el manejo de la transición de las imágenes entregadas por la API de Flickr.
