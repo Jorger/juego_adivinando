@@ -27,7 +27,7 @@ Para el presente juego se ha utilizado:
 
 También se ha utilizado ```localStorage```para el almacenamiento del número de la palabra que se encuentra el usuario.
 
-Para que el juego funcione como una "aplicación nativa" (webApp) es necesario "instalarla" en este caso a través de la opción "Add Home Screen" que ofrece el navegador (Chrome), además para controlar la orientación del dispositivo y otras opciones una vez "instalado" se hace uso del archivo [manifest.json
+Para que el juego funcione como una "aplicación nativa" (webApp) es necesario "instalarla" en este caso a través de la opción "Add Home Screen" que ofrece el navegador (Chrome), además para controlar la orientación del dispositivo y otras opciones una vez "instalado" se hace uso del archivo [manifest.json]
 
 ### Futuras Mejoras.
 
