@@ -5,7 +5,7 @@
   				{
   					"src": "img/icono.png",
   					"sizes": "96x96",
-  					"type": "image/gif"
+  					"type": "image/png"
   				}
   		   ],
   "start_url": "index.html",
