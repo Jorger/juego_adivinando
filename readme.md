@@ -22,7 +22,7 @@ Para el presente juego se ha utilizado:
 
 * [API de Flickr]: Para el manejo de las imágenes, dado un tag el servicio devuelve una colección de imágenes (JSON).
 * [owlcarousel]: Librería para el manejo de la transición de las imágenes entregadas por la API de Flickr.
-* [sweetalert]: Lirería que pemite reemplazar el manejo de los mensajes nativos del navegador ```alert()``` ```confirm()```
+* [sweetalert]: Librería que pemite reemplazar el manejo de los mensajes nativos del navegador ```alert()``` ```confirm()```
 * [SoundJS]: Para el manejo de los sonidos.
 
 También se ha utilizado ```localStorage```para el almacenamiento del número de la palabra que se encuentra el usuario.
